@@ -141,6 +141,7 @@ class MonthScheduleServiceTest extends TestCase
         $this->assertEquals($expected, $this->getService()->prepareSendInfo($monthId));
     }
 
+    /*
     public function testPrepareMailTo()
     {
         $expected = $this->faker->safeEmail;
@@ -152,6 +153,7 @@ class MonthScheduleServiceTest extends TestCase
         });
         $this->assertEquals($expected, $this->getService()->prepareMailTo());
     }
+    */
 
     public function testPrepareSubject()
     {

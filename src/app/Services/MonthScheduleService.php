@@ -70,7 +70,8 @@ class MonthScheduleService
 
     public function prepareMailTo()
     {
-        return $this->getSettingValue(Category::RESERVATION, Setting::KEY_MAIL_TO);
+        // return $this->getSettingValue(Category::RESERVATION, Setting::KEY_MAIL_TO);
+        return '';
     }
 
     public function prepareSubject($month)

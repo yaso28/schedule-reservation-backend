@@ -15,7 +15,7 @@ class SettingSeeder extends Seeder
      */
     public function run()
     {
-        $this->save(Category::RESERVATION, Setting::KEY_MAIL_TO, null, '練習予定を送信する宛先のメールアドレスです。');
+        // $this->save(Category::RESERVATION, Setting::KEY_MAIL_TO, null, '練習予定を送信する宛先のメールアドレスです。');
         $this->save(Category::RESERVATION, Setting::KEY_MAIL_SUBJECT, '{month_name}の練習予定', 'メールの件名です。{month_name}は"yyyy年mm月"に置き換わります。');
         $this->save(Category::RESERVATION, Setting::KEY_MAIL_MESSAGE_BEGIN, "こんにちは。\n{month_name}の練習予定をご連絡します。", 'メール本文の最初に載せる文章です。{month_name}は"yyyy年mm月"に置き換わります。この文章のあとに予定が載ります。');
         $this->save(Category::RESERVATION, Setting::KEY_MAIL_MESSAGE_END, "以上です。\nよろしくお願いします。", 'メール本文の最後に載せる文章です。');
